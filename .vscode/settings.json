@@ -1,0 +1,13 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/cpp",
+    // configuration setting, lệnh -D trong cmake
+    "cmake.configureSettings": {
+        "CMAKE_CUDA_FLAGS": "--expt-extended-lambda -std=c++14"
+    },
+    // Tạo args trong khi config
+    "cmake.debugConfig": {
+        "args": [
+            "/face_recognition/git/embedding/face.evoLVe.PyTorch/arcfaceR50_asia.onnx",
+            "/face_recognition/git/embedding/face.evoLVe.PyTorch/arcfaceR50_asia.plan"
+        ]
+}
